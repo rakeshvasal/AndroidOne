@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "135976074288",
+    "firebase_url": "https://androidone-43cbb.firebaseio.com",
+    "project_id": "androidone-43cbb",
+    "storage_bucket": "androidone-43cbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135976074288:android:aaa11ef8d533ad8b",
+        "android_client_info": {
+          "package_name": "com.dev.rakeshvasal.androidone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135976074288-ifero2jtb1f5plgthjqnrhj8hdd4d325.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.rakeshvasal.androidone",
+            "certificate_hash": "78cc4031ebdbdb6f7ee866fdb739ff416b026e6f"
+          }
+        },
+        {
+          "client_id": "135976074288-ipmapit1cuekqf01igd0bi6j1du01dvh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.rakeshvasal.androidone",
+            "certificate_hash": "4e259ac719b54640032803744c53eca1f26c96c9"
+          }
+        },
+        {
+          "client_id": "135976074288-jmtaii7bqpue70ttiiehvbif57q038u5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.rakeshvasal.androidone",
+            "certificate_hash": "f3b41bf9c91b94024251ee272b54a954e5bdd612"
+          }
+        },
+        {
+          "client_id": "135976074288-g6k4j2eu05immbgkbi6apl955662b4ck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcrRDegk7tpOMDo8JJB1EB5P8zeT1VH1E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135976074288-g6k4j2eu05immbgkbi6apl955662b4ck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

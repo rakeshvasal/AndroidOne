@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AndroidOne</string>
+
+
+    <!-- Server Client ID.  This should be a valid Web OAuth 2.0 Client ID obtained
+        from https://console.developers.google.com/ -->
+    <string name="server_client_id">135976074288-g6k4j2eu05immbgkbi6apl955662b4ck.apps.googleusercontent.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Clairify_API_KEY">dd502a352a8e40008f1e3d9b356db27e</string>
+
+    <string name="facebook_app_id">121076895348769</string>
+    <string name="fb_login_protocol_scheme">fb121076895348769</string>
+</resources>
