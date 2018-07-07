@@ -55,6 +55,7 @@ public class MasterContainerActivity extends BaseActivity implements View.OnClic
         TextView page_title = toolbar.findViewById(R.id.page_title);
         page_title.setText(getResources().getString(R.string.app_name));
 
+        
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         Fragment fragment = new Home_Fragment();
         transaction.add(R.id.fragment_container, fragment);
