@@ -1,10 +1,10 @@
 package com.dev.rakeshvasal.androidone.Activity.Fragments;
 
 
-
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 
@@ -20,6 +20,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.dev.rakeshvasal.androidone.Activity.Activity.CameraTest;
 import com.dev.rakeshvasal.androidone.Activity.BaseFragment;
 import com.dev.rakeshvasal.androidone.Activity.Fragments.Cricket.Cricket_Data;
 import com.dev.rakeshvasal.androidone.Activity.Fragments.Facebook.FacebookHomeFragment;
@@ -115,7 +116,10 @@ public class Home_Fragment extends BaseFragment implements AdapterView.OnItemCli
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Fragment clicked = CLASSES[position];
-
+        if (position == 0) {
+            Intent intent = new Intent(getActivity(), CameraTest.class);
+            startActivity(intent);
+        }
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         Fragment fragment = clicked;
         transaction.replace(R.id.fragment_container, fragment);
@@ -133,7 +137,6 @@ public class Home_Fragment extends BaseFragment implements AdapterView.OnItemCli
         snackbar.show();
 
     }
-
 
 
     public static class MyArrayAdapter extends ArrayAdapter<Fragment> {
