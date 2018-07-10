@@ -18,6 +18,7 @@ import android.util.Log;
 import android.view.Display;
 import android.view.Surface;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -27,6 +28,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.dev.rakeshvasal.androidone.Activity.CustomViews.CameraPreview;
+import com.dev.rakeshvasal.androidone.Activity.FocusView;
 import com.dev.rakeshvasal.androidone.R;
 
 import java.io.File;
@@ -57,7 +59,12 @@ public class CameraTest extends AppCompatActivity {
         setContentView(R.layout.activity_camera_test);
         Button captureButton = (Button) findViewById(R.id.button_capture);
         preview = (FrameLayout) findViewById(R.id.camera_preview);
-
+        RelativeLayout fakeview = findViewById(R.id.fakeview);
+        FocusView view = new FocusView(this);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        layoutParams.addRule(RelativeLayout.CENTER_IN_PARENT, RelativeLayout.TRUE);
+        view.setLayoutParams(layoutParams);
+        fakeview.addView(view);
         captureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
