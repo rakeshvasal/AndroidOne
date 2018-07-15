@@ -51,6 +51,7 @@ public class CameraTest extends AppCompatActivity {
     FrameLayout preview;
     int cameraId = -1;
     public static String TAG = "CameraActivity";
+    private RelativeLayout ImagePreview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

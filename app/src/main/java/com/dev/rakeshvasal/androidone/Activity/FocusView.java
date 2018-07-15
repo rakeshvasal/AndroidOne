@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 public class FocusView extends View {
-    private Paint mTransparentPaint;
+
     private Paint mSemiBlackPaint;
     private Path mPath = new Path();
 
@@ -38,10 +38,8 @@ public class FocusView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         mPath.reset();
-        //mPath.addCircle(canvas.getWidth() / 2, canvas.getHeight() / 2, 550, Path.Direction.CW);
         mPath.addRect(100, 350, 1000, 950,Path.Direction.CW);
         mPath.setFillType(Path.FillType.INVERSE_EVEN_ODD);
-        //canvas.drawCircle(canvas.getWidth() / 2, canvas.getHeight() / 2, 550, mTransparentPaint);
         canvas.drawPath(mPath, mSemiBlackPaint);
         canvas.clipPath(mPath);
         canvas.drawColor(Color.parseColor("#80212121"));

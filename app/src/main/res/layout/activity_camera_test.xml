@@ -16,6 +16,7 @@
 
         />
     <RelativeLayout
+        android:id="@+id/func_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
@@ -24,7 +25,6 @@
             android:id="@+id/button_capture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_centerInParent="true"
             android:background="@color/colorPrimary"
             android:text="SNAP" />
@@ -33,8 +33,6 @@
             android:id="@+id/flash_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-
             android:background="@color/colorPrimary"
             android:text="Flash" />
     </RelativeLayout>
